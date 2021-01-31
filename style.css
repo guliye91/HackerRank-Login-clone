@@ -46,6 +46,7 @@ body {
 }
 .contents {
   margin: 0 0 3rem;
+  padding: 0 1rem;
 }
 .contents h1 {
   font-weight: 700;
@@ -135,6 +136,7 @@ body {
 }
 .terms {
   padding: 2rem 0;
+  font-size: 1.3rem;
 }
 /* general styling */
 a {
@@ -164,4 +166,94 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
   border-bottom: 2px solid #000;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 200px;
+  }
+  .contents h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .tabs {
+    padding: 1rem;
+  }
+  .tabs .tab-item {
+    font-size: 1.5rem;
+  }
+  .tab-contents {
+    margin: 1rem 0 0 0;
+  }
+  input {
+    padding: 1rem 1rem 1rem 3.5rem;
+    font-size: 1.5rem;
+  }
+  input[type="checkbox"] {
+    padding: 0 4rem;
+    width: 3rem;
+    zoom: 1.2;
+  }
+  .icons img {
+    width: 30px;
+  }
+  .terms {
+    padding: 2rem 0;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .bg-color {
+    padding: 1rem 6rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .sign-up-login {
+    width: 400px;
+  }
+  .btn-create {
+    transform: translateX(15rem);
+  }
+  .btn-login {
+    transform: translateX(25rem);
+  }
+  .forgot-password {
+    padding: 0 1rem 0 6rem;
+    /* display: inline-block; */
+  }
+}
+@media screen and (max-width: 375px) {
+  .contents p {
+    width: 100%;
+    font-weight: 300;
+  }
+  input {
+    width: 82%;
+  }
+  .icons {
+    grid-template-columns: repeat(4, 8rem);
+    gap: 1rem;
+  }
+  .icons img {
+    width: 30px;
+  }
+  .terms {
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
+  .forgot-password {
+    padding: 0 1rem 0 2.5rem;
+    /* display: inline-block; */
+  }
 }
