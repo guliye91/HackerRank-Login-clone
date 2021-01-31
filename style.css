@@ -238,6 +238,13 @@ input[type="password"]:focus {
     width: 100%;
     font-weight: 300;
   }
+  .sign-up-login {
+    background-color: var(--color-white);
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 5px #738f93, -2px -2px 5px #738f93;
+    height: auto;
+  }
   input {
     width: 82%;
   }
@@ -255,5 +262,70 @@ input[type="password"]:focus {
   .forgot-password {
     padding: 0 1rem 0 2.5rem;
     /* display: inline-block; */
+  }
+  .bg-color {
+    padding: 2rem 4rem;
+  }
+  .tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-shade-lighter);
+    padding: 2rem;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .btn-create {
+    transform: translateX(10rem);
+  }
+  .btn-login {
+    transform: translateX(20rem);
+  }
+  .icons {
+    grid-template-columns: repeat(4, 6rem);
+    gap: 1rem;
+  }
+  .icons img {
+    width: 20px;
+  }
+  .forgot-password {
+    padding: 0 1rem 0 1rem;
+    /* display: inline-block; */
+  }
+  input {
+    width: 92%;
+  }
+  input[type="checkbox"] {
+    padding: 0 1rem;
+    width: 2rem;
+    zoom: 1;
+  }
+  .tabs {
+    padding: 0 2rem 0 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .checkbox-forgot {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .forgot-password {
+    padding: 0 1rem 0 0.4rem;
+    /* display: inline-block; */
+  }
+  .btn-create {
+    transform: translateX(5rem);
+  }
+  .btn-login {
+    transform: translateX(12rem);
+  }
+  .bg-color {
+    padding: 1rem 2rem;
+  }
+  .terms {
+    padding: 2rem;
+    font-size: 0.5rem;
   }
 }
